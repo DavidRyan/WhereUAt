@@ -97,6 +97,9 @@ public class TextListenService extends Service {
                         SharedPreferences settings = getSharedPreferences(Constants.PREFERENCES, MODE_PRIVATE);  
                         LOCATION_REQUEST = settings.getString(Constants.PREFERENCES_KEYWORD, "Where u at?");
                         msg = message.getMessageBody();
+
+                        Log.d("XXX",LOCATION_REQUEST);
+
                         if(msg.startsWith(LOCATION_REQUEST) && hasPermission(message.getOriginatingAddress())) {
                             number = message.getOriginatingAddress();
                             number = number.replace("-","");

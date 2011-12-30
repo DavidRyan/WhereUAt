@@ -65,21 +65,21 @@ public class MainActivity extends Activity {
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             int current = getResources().getConfiguration().orientation;
             if(isChecked) {
-                stopServices();
-            } else {
                 startServices();
+            } else {
+                stopServices();
             }
         }
     };
 
-    private void startServices() {
-       stopService(new Intent(this, TextListenService.class));
-       stopService(new Intent(this, LocationService.class));
+    private void stopServices() {
+        stopService(new Intent(this, TextListenService.class));
+        stopService(new Intent(this, LocationService.class));
     }
 
-    private void stopServices() {
-       startService(new Intent(this, TextListenService.class));
-       startService(new Intent(this, LocationService.class));
+    private void startServices() {
+        startService(new Intent(this, TextListenService.class));
+        startService(new Intent(this, LocationService.class));
     }
  
     @Override
