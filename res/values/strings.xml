@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Where u at?</string>
+    <string name="PermissionButton">Permissions</string>
+    <string name="settings">Settings</string>
+    <string name="buttonID">Add!</string>
+    <string name="textBoxText">Add a Number Here</string>
+    <string name="permissionListText">Permissions</string>
+    <string name="gpsOnOff">GPS</string>
+    <string name="keyword">Keyword</string>
+    <string name="save">Save</string>
+    <string name="contacts">Contacts</string>
+</resources>

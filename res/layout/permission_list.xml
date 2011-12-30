@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#E0E0E0">
+    <RelativeLayout 
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dip">
+        <TextView
+            android:id="@+id/permission_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permissionListText"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" 
+            android:layout_centerHorizontal="true"/> 
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/permission_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="361dp"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:background="#FFFFFF"
+        android:fadingEdge="horizontal"
+        android:cacheColorHint="#00000000"/>
+
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="18dip"
+        android:background="@drawable/add_contact_button"
+        android:text="+" />
+
+</LinearLayout>
