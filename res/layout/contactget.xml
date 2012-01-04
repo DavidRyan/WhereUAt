@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="#E0E0E0">
+  android:background="@drawable/background">
 
     <RelativeLayout 
             android:layout_height="wrap_content" 
@@ -15,17 +15,17 @@
             android:layout_height="wrap_content"
             android:text="@string/contacts"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#000000" 
+            android:textColor="#FFFFFF" 
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dip"/>
 
         <ListView
             android:id="@+id/contactList"
             android:layout_width="match_parent"
-            android:layout_height="410dip"
+            android:layout_height="430dip"
             android:layout_marginLeft="10dip"
             android:layout_marginRight="10dip"
-            android:layout_marginTop="40dip"
+            android:layout_marginTop="55dip"
             android:background="#FFFFFF"
             android:fadingEdge="horizontal"
             android:cacheColorHint="#00000000"/>

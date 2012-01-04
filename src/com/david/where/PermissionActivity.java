@@ -33,7 +33,7 @@ public class PermissionActivity extends Activity {
         setContentView(R.layout.permission_list);
         
         SQLiteDatabase mDatabase = openOrCreateDatabase(Constants.DB_NAME, SQLiteDatabase.OPEN_READONLY, null);
-        mCursor = mDatabase.query(Constants.TABLE_NAME, null, null, null, null, null, null); 
+        mCursor = mDatabase.query(Constants.TABLE_NAME, null, null, null, null, null, "1 ASC"); 
 
         mCursor.moveToFirst();
 

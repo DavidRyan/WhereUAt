@@ -17,7 +17,7 @@
         <activity android:name=".MainActivity"
                   android:label="@string/app_name"
             	  android:theme="@android:style/Theme.NoTitleBar"
-            	  >
+            	  android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -26,13 +26,16 @@
         
         <activity android:name="GetContactsActivity"
             	  android:theme="@android:style/Theme.NoTitleBar" 
+                  android:screenOrientation="portrait" 
                   android:label="@string/app_name">
         </activity>
         <activity android:name="SettingsActivity" 
+                  android:screenOrientation="portrait"
                   android:label="@string/app_name">
         </activity>       
         <activity android:name="PermissionActivity" 
             	  android:theme="@android:style/Theme.NoTitleBar"
+                  android:screenOrientation="portrait"
                   android:label="@string/app_name">
         </activity>       
         <service android:label="TextListenService"

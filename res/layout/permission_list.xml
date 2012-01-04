@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:background="#E0E0E0">
+    android:background="@drawable/background">
     <RelativeLayout 
             android:layout_height="wrap_content" 
             android:layout_width="fill_parent"
@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:text="@string/permissionListText"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#000000" 
+            android:textColor="#FFFFFF" 
             android:layout_centerHorizontal="true"/> 
     </RelativeLayout>
 
@@ -23,10 +23,10 @@
         android:id="@+id/permission_listview"
         android:layout_width="fill_parent"
         android:layout_height="361dp"
-        android:layout_marginBottom="10dip"
+        android:layout_marginBottom="0dip"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
-        android:layout_marginTop="20dip"
+        android:layout_marginTop="30dip"
         android:background="#FFFFFF"
         android:fadingEdge="horizontal"
         android:cacheColorHint="#00000000"/>
