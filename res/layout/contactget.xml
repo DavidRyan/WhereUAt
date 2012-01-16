@@ -22,10 +22,12 @@
         <ListView
             android:id="@+id/contactList"
             android:layout_width="match_parent"
-            android:layout_height="430dip"
+            android:layout_height="fill_parent"
             android:layout_marginLeft="10dip"
             android:layout_marginRight="10dip"
-            android:layout_marginTop="55dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="15dip"
+            android:layout_below=@id/permission_title"
             android:background="#FFFFFF"
             android:fadingEdge="horizontal"
             android:cacheColorHint="#00000000"/>
