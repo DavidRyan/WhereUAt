@@ -1,54 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout 
-        android:layout_width="fill_parent" 
-        android:orientation="vertical" 
-        android:layout_height="fill_parent" 
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:background="@drawable/background">
-            <RelativeLayout 
-                    android:layout_height="wrap_content" 
-                    android:layout_width="fill_parent"
-                    android:layout_marginBottom="100dip"
-                    android:layout_marginTop="10dip">
-                <TextView
-                    android:id="@+id/title_name"
-                    android:textColor="#FFFFFF"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_name"
-                    android:textAppearance="?android:attr/textAppearanceLarge" 
-                    android:layout_centerHorizontal="true"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background"
+        android:gravity="center_horizontal" >
 
-                /> 
-            </RelativeLayout>
-        <LinearLayout 
-            android:orientation="vertical" 
-            android:layout_height="wrap_content" 
-            android:layout_width="match_parent" 
-            android:layout_marginTop="10dip">
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="a14f108fcf3e4d9"
+            ads:loadAdOnCreate="true" >
+        </com.google.ads.AdView>
 
-            <RelativeLayout 
-                android:layout_height="wrap_content" 
-                android:layout_width="match_parent">
-                <Button 
-                    android:id="@+id/permission_button" 
-                    android:layout_width="250dip" 
-                    android:layout_height="100dip"  
-                    android:layout_centerHorizontal="true" 
-                    android:layout_marginBottom="50dip"
-                    android:text="@string/permissionListText"
-                    android:background="@drawable/permission_button"/>
-            </RelativeLayout>
-            <RelativeLayout 
-                android:layout_height="wrap_content" 
-                android:layout_width="match_parent">
-                <ToggleButton
-                  	android:id="@+id/onOffToggle" 
-                    android:layout_width="250dip" 
-                    android:layout_height="100dip"  
-                    android:layout_centerHorizontal="true" 
-                    android:layout_marginTop="25dip"
-                    android:background="@drawable/onoff_button"/>
-            </RelativeLayout>
-        </LinearLayout>
-   </LinearLayout>
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+        <ToggleButton
+            android:id="@+id/onOffToggle"
+            android:layout_width="250dip"
+            android:layout_height="100dip"
+            android:layout_above="@+id/adView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="96dp"
+            android:background="@drawable/onoff_button" />
+
+        <Button
+            android:id="@+id/permission_button"
+            android:layout_width="250dip"
+            android:layout_height="100dip"
+            android:layout_above="@+id/onOffToggle"
+            android:layout_alignLeft="@+id/onOffToggle"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/permission_button"
+            android:text="@string/permissionListText" />
+
+    </RelativeLayout>
